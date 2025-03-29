@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     "corsheaders",
 ]
-
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 AUTH_USER_MODEL = 'base.User'
 
 MIDDLEWARE = [
